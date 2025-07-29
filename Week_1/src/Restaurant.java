@@ -4,11 +4,11 @@ public class Restaurant {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter food bill: ");
-        double b = sc.nextDouble(); // base bill
+        double b = sc.nextDouble(); 
       
-        double g = b * 0.025; // GST
-        double m = b * 0.030; // Maintenance
-        double t = b + g + m; // total before discount
+        double g = b * 0.025; 
+        double m = b * 0.030; 
+        double t = b + g + m; 
 
         double d; // discount
         if (b > 1000) {
@@ -17,7 +17,7 @@ public class Restaurant {
             d = t * 0.05;
         }
 
-        double f = t - d; // final bill
+        double f = t - d; 
 
         System.out.println("Food Bill: " + b);
         System.out.println("GST: " + g);
